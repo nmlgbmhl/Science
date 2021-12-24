@@ -8,11 +8,11 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 
 /**
- * [设置反射抽取方法]()
+ * [设置反射使用调用对象的指定方法](Set reflection to use the specified method of the calling object)
  * @author LZH
  * @version V1.0
- * @description zh -
- * @description en -
+ * @description zh - 设置反射使用调用对象的指定方法
+ * @description en - Set reflection to use the specified method of the calling object
  * @since 2021/12/24 9:10
  */
 public class BaseServlet extends HttpServlet {
