@@ -14,6 +14,7 @@ public class Comment {
 	private int id;
 	private int articleId;
 	private int userId;
+	private String content;
 	private boolean isDelete;
 	private Date gmtCreate;
 	private Date gmtModified;
@@ -21,10 +22,11 @@ public class Comment {
 	public Comment() {
 	}
 
-	public Comment(int id, int articleId, int userId, boolean isDelete, Date gmtCreate, Date gmtModified) {
+	public Comment(int id, int articleId, int userId, String content, boolean isDelete, Date gmtCreate, Date gmtModified) {
 		this.id = id;
 		this.articleId = articleId;
 		this.userId = userId;
+		this.content = content;
 		this.isDelete = isDelete;
 		this.gmtCreate = gmtCreate;
 		this.gmtModified = gmtModified;
@@ -36,6 +38,7 @@ public class Comment {
 			"id=" + id +
 			", articleId=" + articleId +
 			", userId=" + userId +
+			", content='" + content + '\'' +
 			", isDelete=" + isDelete +
 			", gmtCreate=" + gmtCreate +
 			", gmtModified=" + gmtModified +
@@ -64,6 +67,14 @@ public class Comment {
 
 	public void setUserId(int userId) {
 		this.userId = userId;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	public boolean isDelete() {
